@@ -16,6 +16,9 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<querydsl.version>4.1.4</querydsl.version>
+		<mongodb-reactivestreams.version>1.9.2</mongodb-reactivestreams.version>
+		
 	</properties>
 
 	<dependencies>
@@ -52,6 +55,16 @@
     <type>pom</type>
     <scope>import</scope>
 </dependency>
+        <dependency>
+            <groupId>com.querydsl</groupId>
+            <artifactId>querydsl-mongodb</artifactId>
+            <version>${querydsl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.querydsl</groupId>
+            <artifactId>querydsl-apt</artifactId>
+            <version>${querydsl.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
