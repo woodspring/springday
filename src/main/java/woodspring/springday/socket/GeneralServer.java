@@ -32,9 +32,7 @@ public class GeneralServer implements SocketServer{
 			stop();
 			logger.info("GeneralServer finally END");
 			
-		}
-
-		
+		}	
 	}
 
 	@Override
